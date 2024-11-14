@@ -13,3 +13,5 @@ missing_values<-colSums(is.na(Project2))
 missing_values[missing_values >0]
 
 View(missing_values)
+
+### test command git
