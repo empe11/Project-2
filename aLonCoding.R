@@ -17,7 +17,13 @@ View(subset1)
 plot(subset1$quality_rating~subset1$TOTHRD, main="Scatterplot of quality Against Income", 
      xlab="complain", ylab="quality", col="chocolate", pch=16)
 
-table(myData$CERTIFICATION)
+table(myData$quality_rating)
+
+missing_values<-colSums(is.na(myData))
+View(missing_values)
+
+length(missing_values[missing_values >0])
+
 
 ##PART 2:MODEL BUILDING
 
